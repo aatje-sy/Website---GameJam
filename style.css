@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    color: black;
+    background: radial-gradient(circle, hsla(188, 39%, 36%, 1) 0%, hsla(188, 27%, 45%, 1) 15%, hsla(188, 22%, 52%, 1) 30%, hsla(0, 0%, 100%, 1) 100%);
+    background-size: 300%;
+    font-family: 'Outfit', sans-serif;
+}
+.flex {
+    display: flex;
+}
+.slide {
+    height: 100vh;
+    width: auto;
+}
+header {
+    height: 1px;
+}
+.studio-logo{
+    height: 150px;
+    width: 150px;
+}
+.home-container{
+    justify-content: center;
+}
+.home-page {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.big-txt {
+    font-size: 40px;
+}
+.home-page-buttons{
+    gap: 40px;
+}
+.button {
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, hsla(44, 78%, 58%, 1) 0%, hsla(44, 100%, 68%, 1) 100%);
+    font-weight: 600;
+}
+.btn-link{
+    text-decoration: none;
+    color: black;
+    width: 200px;
+}
+.about-container {
+    padding: 20px 0px 0px 0px;
+    height: auto;
+}
+.about-titel{
+    margin-left: 50px;
+    margin-top: 40px;
+}
