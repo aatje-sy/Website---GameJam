@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-body {
+.flex {
+    display: flex;
+}
+body , html{
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
     color: black;
     background: radial-gradient(circle, hsla(188, 39%, 36%, 1) 0%, hsla(188, 27%, 45%, 1) 15%, hsla(188, 22%, 52%, 1) 30%, hsla(0, 0%, 100%, 1) 100%);
     background-size: 300%;
     font-family: 'Outfit', sans-serif;
-}
-.flex {
-    display: flex;
+    scroll-snap-type: y mandatory;
 }
 .slide {
     height: 100vh;
     width: auto;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 header {
     height: 1px;
@@ -58,4 +59,25 @@ header {
 .about-titel{
     margin-left: 50px;
     margin-top: 40px;
+}
+.game-story {
+    height: auto;
+    width: 48%;
+    padding-left: 50px;
+}
+.game-design {
+    height: 300px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+.character-design {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+}
+.shop-container{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
