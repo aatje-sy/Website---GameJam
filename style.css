@@ -13,6 +13,7 @@ body , html{
 }
 .slide {
     height: 100vh;
+    width: 100vw;
     width: auto;
     scroll-snap-align: center;
     scroll-snap-stop: always;
@@ -75,6 +76,109 @@ header {
     position: absolute;
     height: 400px;
     width: 400px;
+}
+.game-creators-page {
+    flex-direction: column;
+    gap: 15px;
+}
+.game-creators-title {
+    text-align: center;
+}
+.creators-cont {
+    justify-content: center;
+    gap: 100px;
+}
+.first-creators-part {
+    flex-direction: row;
+}
+.second-creator-part {
+    flex-direction: row;
+}
+.creators {
+    height: 270px;
+    width: 230px;
+    box-shadow: 0 0 10px 3px black;
+    flex-direction: column;
+    align-items: center;
+}
+.creator-name {
+    font-size: 20px;
+}
+.creator-img {
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+}
+.information-button{
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    margin: 0 auto;
+    background: linear-gradient(90deg, hsla(44, 78%, 58%, 1) 0%, hsla(44, 100%, 68%, 1) 100%);    background-clip: padding-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    color: black;  
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.button:hover {
+    color: white;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    height: 300px;
+}
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.opup .close:hover {
+    color: red;
+}
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
 }
 .shop-container{
     justify-content: center;
