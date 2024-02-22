@@ -35,15 +35,23 @@ header {
     flex-direction: column;
 }
 .logo {
-    height: 250px;
-    width: 250px;
+    height: 400px;
+    width: 400px;
     object-fit: contain;
+    position: absolute;
+    z-index: 0;
+}
+.homepage-buttons-info {
+    margin-top: 200px;
+    flex-direction: column;
+    align-items: center;
 }
 .big-txt {
     font-size: 40px;
 }
 .home-page-buttons{
     gap: 40px;
+    z-index: 3;
 }
 .button {
     height: 50px;
@@ -98,16 +106,18 @@ header {
 }
 .second-creator-part {
     flex-direction: row;
+    margin-bottom: 20px;
 }
 .creators {
-    height: 270px;
+    height: 280px;
     width: 230px;
     box-shadow: 0 0 10px 3px black;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 .creator-name {
-    font-size: 20px;
+    font-size: 18px;
 }
 .creator-img {
     height: 150px;
@@ -198,11 +208,15 @@ header {
     height: 600px;
     width: auto;
     align-items: center;
-    border: 2px solid black ;
-    
 }
-.dlc-txt {
+.game-poster {
+    height: 100%;
+    object-fit: contain;
+    margin-left: 280px;
+}
+.pre-txt {
     margin-left: 80px;
+    position: absolute;
 }
 .buy-button-container {
     height: 300px;
@@ -212,38 +226,94 @@ header {
     top: 350px;
     padding-left: 20px;
     border-radius: 10px;
-    border: #333 solid 2px;
+    box-shadow: 0 0 10px 3px black;
+
     z-index: 0;
 }
-.DLC-btn {
-    margin-top: 120px;
+.pre-btn {
+    margin-top: 100px;
 }
 .shop-more {
     height: 112px;
     width: 100%;
-    
 }
 .shop-items-container {
     height: 50%;
     width: 100%;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 .main-item {
     height: 90%;
-    width: 40%;
-    background-color: tomato;
+    width: 500px;
+    box-shadow: 0 0 10px 3px black;
+}
+.main-item-img {
+    position: absolute;
+    height: 300px;
+    right: 850px;
+}
+.main-iteminfo {
+  justify-content: center;
+  align-items: flex-end;  
+  flex-direction: column;
+  margin-left: 280px;
 }
 .little-items-big-containere {
     height: 100%;
     width: 50%;
-    background-color: azure;
     flex-direction: column;
     align-items: center;
 }
-
+.shop-top-title{
+    font-size: 20px;
+}
+.items-container{
+    gap: 10px;
+    justify-content: flex-end;
+}
 .small-items {
-    height: 50%;
-    width: 50%;
-    background-color: red;
+    height: 250px;
+    width: 230px;
+    box-shadow: 0 0 10px 3px black;
+    flex-direction: column;
+    align-items: center;
+}
+.small-items-img {
+    height: 150px;
+    width: 120px;
+    margin-top: 10px;
+    object-fit: contain;
+}
+.small-items-bottem {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.bottem-items {
+    height: 90%;
+    width: 22%;
+    padding-top: 10px;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 10px 3px black;
+}
+.bottem-items-img {
+    height: 200px;
+    width: 200px;
+    border: solid 1px black;
+    object-fit: contain;
+}
+.no-border {
+    border: none;
+}
+.items-bottem {
+    height: 90%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.hoodie-btn {
+    margin-bottom: 20px;
 }
